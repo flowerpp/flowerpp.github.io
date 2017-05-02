@@ -1,5 +1,9 @@
 <html>
-<title>《我的 第一次"失恋"》</title>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>《我的 第一次"失恋"》</title>
+</head>
 <body background=..\image\2300.jpg>
 <pre>
                       第一次"失恋"
