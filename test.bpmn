@@ -10,9 +10,9 @@
   targetNamespace='http://www.mossle.com'>
 <process id='leave' name='请假流程' isExecutable='true'>
   <documentation>请假流程</documentation>
-  <startEvent id='leave_1' name='填写请假单1'/>
+  <startEvent id='leave_1' name='填写请假单2'/>
   <sequenceFlow id='transition-1' sourceRef='leave_1' targetRef='taskuser-1'/>
-  <userTask id='taskuser-1' name='填写请假单2' activiti:formKey='leave-request'>
+  <userTask id='taskuser-1' name='填写请假单3' activiti:formKey='leave-request'>
     <humanPerformer>
       <resourceAssignmentExpression>
         <formalExpression>常用语:流程发起人</formalExpression>
@@ -76,107 +76,6 @@
   <endEvent id='endnone-2' name='结束'/>
 </process>
 <bpmndi:BPMNDiagram id='BPMNDiagram_leave'>
-  <bpmndi:BPMNPlane bpmnElement='leave' id='BPMNPlane_leave'>
-    <bpmndi:BPMNShape bpmnElement='leave_1' id='BPMNShape_leave_1'>
-      <omgdc:Bounds height='35' width='35' x='29' y='208'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='taskuser-1' id='BPMNShape_taskuser-1'>
-      <omgdc:Bounds height='80' width='120' x='109' y='185'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='taskuser-2' id='BPMNShape_taskuser-2'>
-      <omgdc:Bounds height='80' width='120' x='279' y='185'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='exclusive-1' id='BPMNShape_exclusive-1'>
-      <omgdc:Bounds height='40' width='40' x='445' y='205'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='taskuser-3' id='BPMNShape_taskuser-3'>
-      <omgdc:Bounds height='80' width='120' x='531' y='185'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='exclusive-2' id='BPMNShape_exclusive-2'>
-      <omgdc:Bounds height='40' width='40' x='681' y='205'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='taskuser-5' id='BPMNShape_taskuser-5'>
-      <omgdc:Bounds height='80' width='120' x='531' y='80'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='exclusive-3' id='BPMNShape_exclusive-3'>
-      <omgdc:Bounds height='40' width='40' x='571' y='12'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='taskuser-6' id='BPMNShape_taskuser-6'>
-      <omgdc:Bounds height='80' width='120' x='764' y='185'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNShape bpmnElement='endnone-2' id='BPMNShape_endnone-2'>
-      <omgdc:Bounds height='40' width='40' x='926' y='205'/>
-    </bpmndi:BPMNShape>
-    <bpmndi:BPMNEdge bpmnElement='transition-1' id='BPMNShape_transition-1'>
-      <omgdi:waypoint x='69' y='227'/>
-      <omgdi:waypoint x='109' y='226'/>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-2' id='BPMNShape_transition-2'>
-      <omgdi:waypoint x='229' y='225'/>
-      <omgdi:waypoint x='279' y='225'/>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-3' id='BPMNShape_transition-3'>
-      <omgdi:waypoint x='399' y='225'/>
-      <omgdi:waypoint x='445' y='225'/>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-4' id='BPMNShape_transition-4'>
-      <omgdi:waypoint x='485' y='225'/>
-      <omgdi:waypoint x='531' y='225'/>
-	  <bpmndi:BPMNLabel>
-        <omgdc:Bounds height="11" width="100" x="505" y="225"></omgdc:Bounds>
-      </bpmndi:BPMNLabel>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-9' id='BPMNShape_transition-9'>
-      <omgdi:waypoint x='464' y='205'/>
-      <omgdi:waypoint x='464' y='120'/>
-      <omgdi:waypoint x='531' y='120'/>
-	  <bpmndi:BPMNLabel>
-        <omgdc:Bounds height="11" width="100" x="464" y="120"></omgdc:Bounds>
-      </bpmndi:BPMNLabel>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-8' id='BPMNShape_transition-8'>
-      <omgdi:waypoint x='651' y='225'/>
-      <omgdi:waypoint x='681' y='225'/>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-10' id='BPMNShape_transition-10'>
-      <omgdi:waypoint x='700' y='205'/>
-      <omgdi:waypoint x='700' y='120'/>
-      <omgdi:waypoint x='651' y='120'/>
-	  <bpmndi:BPMNLabel>
-        <omgdc:Bounds height="11" width="100" x="700" y="120"></omgdc:Bounds>
-      </bpmndi:BPMNLabel>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-13' id='BPMNShape_transition-13'>
-      <omgdi:waypoint x='721' y='225'/>
-      <omgdi:waypoint x='764' y='225'/>
-	  <bpmndi:BPMNLabel>
-        <omgdc:Bounds height="11" width="100" x="740" y="225"></omgdc:Bounds>
-      </bpmndi:BPMNLabel>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-11' id='BPMNShape_transition-11'>
-      <omgdi:waypoint x='591' y='80'/>
-      <omgdi:waypoint x='591' y='52'/>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-12' id='BPMNShape_transition-12'>
-      <omgdi:waypoint x='571' y='32'/>
-      <omgdi:waypoint x='338' y='32'/>
-      <omgdi:waypoint x='338' y='185'/>
-	  <bpmndi:BPMNLabel>
-        <omgdc:Bounds height="11" width="100" x="338" y="32"></omgdc:Bounds>
-      </bpmndi:BPMNLabel>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-15' id='BPMNShape_transition-15'>
-      <omgdi:waypoint x='611' y='32'/>
-      <omgdi:waypoint x='945' y='32'/>
-      <omgdi:waypoint x='945' y='205'/>
-	  <bpmndi:BPMNLabel>
-        <omgdc:Bounds height="11" width="100" x="945" y="32"></omgdc:Bounds>
-      </bpmndi:BPMNLabel>
-    </bpmndi:BPMNEdge>
-    <bpmndi:BPMNEdge bpmnElement='transition-14' id='BPMNShape_transition-14'>
-      <omgdi:waypoint x='884' y='225'/>
-      <omgdi:waypoint x='926' y='225'/>
-    </bpmndi:BPMNEdge>
-  </bpmndi:BPMNPlane>
+ 
 </bpmndi:BPMNDiagram>
 </definitions>
